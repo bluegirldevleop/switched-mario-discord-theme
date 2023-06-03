@@ -1,0 +1,71 @@
+/* Switched Mario Theme */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Estilos globais */
+:root {
+  --cor-principal: #FF0000; /* Cor principal do Nintendo Switch */
+  --cor-secundaria: #FFFFFF; /* Cor secundária do Nintendo Switch */
+}
+
+/* Imagem de fundo */
+.app {
+  background-image: url('https://wallpapercave.com/wp/wp4520675.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px); /* Adiciona um desfoque de 8px à imagem de fundo */
+}
+
+/* Botões */
+.button {
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-principal);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--cor-principal);
+  color: var(--cor-secundaria);
+}
+
+/* Seleções */
+.select {
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-principal);
+  border: 2px solid var(--cor-principal);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.select:hover {
+  background-color: var(--cor-principal);
+  color: var(--cor-secundaria);
+}
+
+/* Exemplo de uso dos componentes */
+.button-primary {
+  background-color: var(--cor-principal);
+  color: var(--cor-secundaria);
+}
+
+.select-secondary {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-principal);
+  border: 2px solid var(--cor-secundaria);
+}
